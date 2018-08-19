@@ -1,13 +1,21 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
+import { Asset, AppLoading, SplashScreen } from 'expo';
+
 
 export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isSplashReady: false,
+      isAppReady: false,
+    };
+  }
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
+        <Image style={{ width: 300, resizeMode: 'contain' }} source={require('./assets/images/ufc-logo.png')} />
       </View>
     );
   }
@@ -16,7 +24,7 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#D20A0A',
     alignItems: 'center',
     justifyContent: 'center',
   },
