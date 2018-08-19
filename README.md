@@ -7,3 +7,8 @@
   $ create-react-native-app .
 ```
 
+## Deploy
+```
+  $ npm i -g exp
+  $ exp publish
+```

@@ -1,5 +1,8 @@
 {
   "expo": {
+    "name": "UFC GYM Clone",
+    "icon":"",
+    "description":"A React Native study project",
     "sdkVersion": "27.0.0"
   }
 }
