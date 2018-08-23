@@ -1,11 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, Button } from 'react-native';
-import { Asset, AppLoading, SplashScreen } from 'expo';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 //
-import Header from '../components/Header';
+import Block from '../components/Block';
 
 export default class MainScreen extends React.Component {
     static navigationOptions = ({ navigation }) => {
@@ -40,6 +39,7 @@ export default class MainScreen extends React.Component {
         return (
             <View style={styles.container}>
                 <Text>Main</Text>
+                <Block icon="ios-bug" label="test" iconColor="blue"></Block>
             </View>
         );
     }
