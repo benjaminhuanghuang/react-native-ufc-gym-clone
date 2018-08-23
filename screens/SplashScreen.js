@@ -1,7 +1,8 @@
+/*
+    Expo provide splash support by adding 'splash' config under 'expo' field in app.json
+*/
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
-import { Asset, AppLoading, SplashScreen } from 'expo';
-
 
 export default class SplashScreen extends React.Component {
   constructor(props) {

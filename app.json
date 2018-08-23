@@ -3,6 +3,11 @@
     "name": "UFC GYM Clone",
     "icon":"",
     "description":"A React Native study project",
-    "sdkVersion": "27.0.0"
+    "sdkVersion": "27.0.0",
+    "splash": {
+      "image": "./assets/images/ufc-logo.png",
+      "backgroundColor": "#D20A0A",
+      "resizeMode": "contain"
+    }
   }
 }
