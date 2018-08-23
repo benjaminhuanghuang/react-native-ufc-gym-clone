@@ -1,7 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import { Asset, AppLoading, SplashScreen } from 'expo';
-
+//
+import AppNavigator from './AppNavigator';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -14,18 +15,7 @@ export default class App extends React.Component {
   }
   render() {
     return (
-      <View style={styles.container}>
-        <Image style={{ width: 300, resizeMode: 'contain' }} source={require('./assets/images/ufc-logo.png')} />
-      </View>
-    );
+      <AppNavigator />
+    )
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#D20A0A',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

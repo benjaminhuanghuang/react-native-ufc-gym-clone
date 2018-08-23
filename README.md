@@ -12,3 +12,6 @@
   $ npm i -g exp
   $ exp publish
 ```
+
+## Resources
+- https://expo.github.io/vector-icons/
